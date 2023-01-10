@@ -1,1 +1,22 @@
 /* Empty file */
+* {
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+.books_list {
+  width: 300px;
+  padding: 0;
+  list-style: none;
+}
+
+.add-btn {
+  margin-top: 10px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 10px;
+}
