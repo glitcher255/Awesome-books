@@ -1,17 +1,7 @@
-# Capstone
-# Capstone
-This is the feature branch
-project:
+# Awesome Books
 <a name="readme-top"></a>
 
-<div align="center">
-
-<!--   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/> -->
-
-<!--   <h3><b>Microverse README Template</b></h3> -->
-
-</div>
+<div align="center"></div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -39,9 +29,9 @@ project:
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Capstone <a name="about-project"></a>
+# 📖 Awesome Books Project <a name="about-project"></a>
 
-Capstone project, portfolio for my CV
+Awesome Books project using JavaScript
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -75,7 +65,8 @@ Capstone project, portfolio for my CV
 
 ### Key Features <a name="key-features"></a>
 
-- This is a stable version
+- Dynamic rendering of books and their authors.
+- Storage and retrieval of data from local storage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,7 +74,7 @@ Capstone project, portfolio for my CV
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://glitcher255.github.io/Capstone-project/)
+- [Live Demo Link](https://glitcher255.github.io/Awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,16 +91,15 @@ In order to run this project you need: any functional browser.
 ### Setup
 
 Clone this repository to your desired folder:
-cd my-folder git clone git@github.com:myaccount/my-project.git
+cd my-folder git clone http://github.com/glitcher255/Awesome-books
 
 ### Install
 
-Install this project with 
+Install this project with npm install to install dependencies
 
 ### Usage
 
-To run the project, execute the following command:
-open your live server
+To run the project, open your live server or browse index.html using your file explorer.
 
 ### Run tests
 
