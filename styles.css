@@ -17,6 +17,11 @@
   margin-left: 80%;
 }
 
+.date {
+  text-align: end;
+  padding: 8px;
+}
+
 #form {
   display: flex;
   flex-direction: column;
@@ -100,8 +105,9 @@
 }
 
 .nav_buttons {
-  border-right: solid 2px;
+  border-right: solid 2px black;
   padding: 10px;
+  cursor: pointer;
 }
 
 .nav_buttons:last-child {
