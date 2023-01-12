@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <nav class="nav">
+    <h2 class="title">Awesome books</h2>
+    <ul class="nav_buttons_container">
+      <li class="nav_buttons books add-new contact">List</li>
+      <li class="nav_buttons add-new books contact">Add new</li>
+      <li class="nav_buttons contact books add-new">Contact</li>
+    </ul>
+  </nav>
   <header>
-      <h1 class="title">Awesome Books</h1>
   </header>
 
   <main>
     <section id="books">
       <ul id="books_list" class="books_list"></ul>
     </section>
-    <hr class="divider"/>
     <section id="add-new">
-      <h2 class="input_title">Add a new book</h2>
+      <h3 class="input_title">Add a new book</h3>
       <form method="post" id="form">
         <input class="input_fields" id="title_input" placeholder="title"></input>
         <input class="input_fields" id="auther_input" placeholder="auther"></input>
@@ -25,8 +31,24 @@
         <button type="submit" class="add-btn del_button">Add</button>
       </form>
     </section>
+
+    <section id="contact">
+      <h3 class="input_title">Contact information</h3>
+      <p>Do you have any questions or just want to say "Hello"?</p>
+      <p>can reach out to us!</p>
+      <ul>
+        <li><p>Our e-mail: mail@mail.com</p></li>
+        <li><p>Our phone number: 00443322166114466</p></li>
+        <li><p>Our address: Street name 22, 24503, city name, Country</p></li>
+      </ul>
+    </section>
   </main>
 
+  <footer class="footer nav">
+    CopyRight
+  </footer>
   <script src="./script.js"></script>
+
 </body>
+
 </html>

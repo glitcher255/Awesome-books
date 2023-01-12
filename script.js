@@ -64,4 +64,20 @@ document.getElementById('form').addEventListener('submit', (e) => {
 window.addEventListener('load', () => {
   awesomeBooks.loadLocalStorageData();
   awesomeBooks.renderBooks();
+  const nav_buttons = document.getElementsByClassName("nav_buttons")[1]
+  for (let x = 2; x < nav_buttons.classList.length; x++) {
+    document.getElementById(nav_buttons.classList[x]).style.display = "none"
+    }
 });
+
+for (let x = 0; x < document.getElementsByClassName("nav_buttons").length; x++) {
+document.getElementsByClassName("nav_buttons")[x].addEventListener('click', handler)
+}
+
+function handler() {
+  for (let x = 2; x < this.classList.length; x++) {
+  document.getElementById(this.classList[x]).style.display = "none"
+  }
+  console.log(this.classList[1])
+  document.getElementById(this.classList[1]).style.display = null
+}
