@@ -13,20 +13,20 @@ class AwesomeBooks {
     booksList.innerHTML = '';
     this.bookArray.forEach((book) => {
       const li = document.createElement('li');
-      li.className = "auther_container"
+      li.className = 'auther_container';
       const autherTitle = document.createElement('p');
-      autherTitle.className = "auther_text"
+      autherTitle.className = 'auther_text';
       autherTitle.innerHTML = `"${book.title}" by ${book.auther}`;
 
       const delButton = document.createElement('button');
-      delButton.className = "del_button"
+      delButton.className = 'del_button';
       delButton.innerHTML = 'Remove';
       li.appendChild(autherTitle);
       li.appendChild(delButton);
       delButton.addEventListener('click', () => {
         li.remove();
         this.bookArray = this.bookArray
-          .filter((item) => !(JSON.stringify(item) === JSON.stringify(book)));
+          .filter((item) => !(item.id === book.id));
         this.saveToLocalStorage();
         this.renderBooks();
       });
@@ -53,7 +53,7 @@ document.getElementById('form').addEventListener('submit', (e) => {
   const auther = document.getElementById('auther_input').value;
   const title = document.getElementById('title_input').value;
 
-  const data = { title, auther };
+  const data = { title, auther, id: Math.ceil((Math.random() * Math.random()) * 100) };
   awesomeBooks.addBook(data);
 
   awesomeBooks.renderBooks();
