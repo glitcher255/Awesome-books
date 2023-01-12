@@ -13,13 +13,13 @@ class AwesomeBooks {
     booksList.innerHTML = '';
     this.bookArray.forEach((book) => {
       const li = document.createElement('li');
-      li.style.borderBottom = 'solid';
-      li.style.borderWidth = '1px';
-      li.style.paddingBottom = '10px';
+      li.className = "auther_container"
       const autherTitle = document.createElement('p');
-      autherTitle.innerHTML = `${book.title} <br> ${book.auther}`;
+      autherTitle.className = "auther_text"
+      autherTitle.innerHTML = `"${book.title}" by ${book.auther}`;
 
       const delButton = document.createElement('button');
+      delButton.className = "del_button"
       delButton.innerHTML = 'Remove';
       li.appendChild(autherTitle);
       li.appendChild(delButton);
