@@ -1,22 +1,82 @@
-/* Empty file */
 * {
   font-family: 'Times New Roman', Times, serif;
   box-sizing: border-box;
 }
 
 .books_list {
-  width: 300px;
+  width: 100%;
   padding: 0;
   list-style: none;
+  border: solid;
+  border-width: 4px;
+  border-radius: 5px;
 }
 
 .add-btn {
   margin-top: 10px;
+  width: 20%;
+  margin-left: 80%;
 }
 
 #form {
   display: flex;
   flex-direction: column;
-  width: 200px;
   gap: 10px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.auther_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.auther_container:nth-child(2n) {
+  background-color: gray;
+}
+
+.auther_text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.del_button {
+  box-shadow: 3px 3px black;
+  border: solid;
+  border-width: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.input_title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.input_fields {
+  border: solid;
+  border-radius: 4px;
+  border-width: 3px;
+  padding: 3px 6px;
+}
+
+.input_fields::placeholder {
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.divider {
+  width: 200px;
+  box-shadow: 1px 1px 1px 1px;
+  border-width: 0;
 }

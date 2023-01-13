@@ -8,19 +8,21 @@
 </head>
 <body>
   <header>
-      <h1>Awesome Books</h1>
+      <h1 class="title">Awesome Books</h1>
   </header>
 
   <main>
     <section id="books">
       <ul id="books_list" class="books_list"></ul>
     </section>
+    <hr class="divider"/>
     <section id="add-new">
+      <h2 class="input_title">Add a new book</h2>
       <form method="post" id="form">
-        <input id="title_input" placeholder="title"></input>
-        <input id="auther_input" placeholder="auther"></input>
+        <input class="input_fields" id="title_input" placeholder="title"></input>
+        <input class="input_fields" id="auther_input" placeholder="auther"></input>
     
-        <button type="submit" class="add-btn">Add</button>
+        <button type="submit" class="add-btn del_button">Add</button>
       </form>
     </section>
   </main>
